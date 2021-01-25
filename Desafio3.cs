@@ -7,117 +7,75 @@
 // // Saída
 // // Imprima o nome do animal correspondente à entrada fornecida.
 
-// // Exemplos de Entrada	Exemplos de Saída
-// // vertebrado
-// // mamifero
-// // onivoro
+// Exemplos de Entrada	            Exemplos de Saída
+// vertebrado
+// mamifero
+// onivoro                          homem
 
-// //                     homem
-
-// // vertebrado
-// // ave
-// // carnivoro
-
-// //                     aguia
+// vertebrado
+// ave
+// carnivoro                        aguia
 
 // // invertebrado
 // // anelideo
-// // onivoro
+// // onivoro                       minhoca
 
-// //                     minhoca
+using System;
+using System.Text;
 
-// using System;
-// using System.Text;
+class MainClass {
+  public static void Main (string[] args) {
+        String  opcao1; //declare as suas variaveis
+        String  opcao2;
+        String  opcao3;
 
-// class MainClass {
-//   public static void Main (string[] args) {
-//         String  opcao1; //declare as suas variaveis
-//         String  opcao2;
-//         String  opcao3;
+        opcao1 = Console.ReadLine(); //insira suas variaveis
+        // opcao2 = Console.ReadLine();
+        // opcao3 = Console.ReadLine();
 
-//         opcao1 = Console.ReadLine(); //insira suas variaveis
-//         // opcao2 = Console.ReadLine();
-//         // opcao3 = Console.ReadLine();
-
-//         if(opcao1 == "vertebrado") { opcao2 = Console.ReadLine();
+        if(opcao1 == "vertebrado") { opcao2 = Console.ReadLine();
             
-//             if(opcao2 == "ave"){ opcao3 = Console.ReadLine();
+            if(opcao2 == "ave"){ opcao3 = Console.ReadLine();
             
-//                 if(opcao3 == "carnivoro"){ Console.WriteLine("aguia\n"); }
+                if(opcao3 == "carnivoro"){ Console.WriteLine("aguia\n"); }
                 
-//                 else if(opcao3 == "onivoro"){ Console.WriteLine("pomba\n"); }
+                else if(opcao3 == "onivoro"){ Console.WriteLine("pomba\n"); }
 
-//                 else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
+                else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
 
-//             }
+            }
 
-//             else if(opcao2 == "mamifero"){ opcao3 = Console.ReadLine();
+            else if(opcao2 == "mamifero"){ opcao3 = Console.ReadLine();
             
-//                 if(opcao3 == "onivoro"){ Console.WriteLine("homem\n"); } 
+                if(opcao3 == "onivoro"){ Console.WriteLine("homem\n"); } 
                 
-//                 else if( opcao3 == "herbivoro"){ Console.WriteLine("vaca\n"); } 
+                else if( opcao3 == "herbivoro"){ Console.WriteLine("vaca\n"); } 
                 
-//                 else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
+                else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
 
-//             } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
-//         }
-//         else if(opcao1 == "invertebrado"){ opcao2 = Console.ReadLine();
+            } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
+        }
+        else if(opcao1 == "invertebrado"){ opcao2 = Console.ReadLine();
            
-//            if(opcao2 == "inseto"){ opcao3 = Console.ReadLine();
+           if(opcao2 == "inseto"){ opcao3 = Console.ReadLine();
             
-//                 if(opcao3 == "hematofago"){ Console.WriteLine("pulga\n"); }
+                if(opcao3 == "hematofago"){ Console.WriteLine("pulga\n"); }
                 
-//                 else if(opcao3 == "herbivoro"){ Console.WriteLine("lagarta\n"); }
+                else if(opcao3 == "herbivoro"){ Console.WriteLine("lagarta\n"); }
 
-//                 else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
-//             }
+                else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
+            }
 
-//             else if(opcao2 == "anelideo"){ opcao3 = Console.ReadLine();
+            else if(opcao2 == "anelideo"){ opcao3 = Console.ReadLine();
             
-//                 if(opcao3 == "hematofago"){ Console.WriteLine("sanguessuga\n"); } 
+                if(opcao3 == "hematofago"){ Console.WriteLine("sanguessuga\n"); } 
                 
-//                 else if( opcao3 == "onivoro"){ Console.WriteLine("minhoca\n"); }
+                else if( opcao3 == "onivoro"){ Console.WriteLine("minhoca\n"); }
 
-//                 else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
+                else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
             
-//             } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
+            } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
         
-//         } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
-
-
-
-
-//     //   if ((opcao1 == "vertebrado" ) && ( opcao2 == "ave" )  && (opcao3 == "carnivoro")) {
-//     //   Console.WriteLine("aguia");
-//     // } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
-
-//     //  if ((opcao1 == "vertebrado" ) && ( opcao2 == "ave" )  && (opcao3 == "onivoro" )) {
-//     //   Console.WriteLine("pomba");
-//     // } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
-
-//     //  if ((opcao1 == "vertebrado ") && (opcao2 == "mamifero" )  && ( opcao3 == "onivoro")) {
-//     //   Console.WriteLine("homem");
-//     // } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
-
-//     //  if ((opcao1 == "vertebrado") && (opcao2 == "mamifero")  && ( opcao3 == "herbivoro")) {
-//     //   Console.WriteLine("vaca");
-//     // } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
-
-//     // if (( opcao1 == "invertebrado") && ( opcao2 == "inseto") && ( opcao3 == "herbivoro")) {
-//     //   Console.WriteLine("lagarta\n");
-//     // } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
-
-//     // if (( opcao1 == "invertebrado") && ( opcao2 == "inseto") && ( opcao3 == "hematofago")) {
-//     //   Console.WriteLine("pulga\n");
-//     // } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
-
-//     // if (( opcao1 == "invertebrado") && ( opcao2 == "anelideo") && ( opcao3 == "onivoro")) {
-//     //   Console.WriteLine("minhoca\n");
-//     // } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
-
-//     // if (( opcao1 == "invertebrado") && ( opcao2 == "anelideo") && ( opcao3 == "hematofago")) {
-//     //   Console.WriteLine("sanguessuga\n");
-//     // } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
-
-//   }
-// }
+        } else {Console.WriteLine("[ERRO] - Você digitou uma palavra inválida!");}
+  }
+}
